@@ -2,14 +2,14 @@ import React from 'react';
 import './MyProfile.css'; // Make sure you have a MyProfile.css file in the same folder
 
 // Importing a placeholder image and icons
-import profilePic from '../assets/profile-pic.jpg'; 
+// import profilePic from '../assets/profile-pic.jpg'; 
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaBriefcase, FaCode, FaGraduationCap, FaDownload } from 'react-icons/fa';
 
 const MyProfile = () => {
   // In a real app, this data would come from an API or state management
   const studentData = {
     name: 'Jane Doe',
-    profilePic: profilePic,
+    profilePic: 'https://i.pinimg.com/236x/db/1f/9a/db1f9a3eaca4758faae5f83947fa807c.jpg',
     university: 'University of Technology',
     branch: 'Computer Science & Engineering',
     graduationYear: 2025,
@@ -49,8 +49,6 @@ const MyProfile = () => {
         link: 'https://github.com/janedoe/task-manager'
       }
     ],
-    // IMPORTANT: Place your resume in the public folder at the root of your project
-    // and update this path. For example: '/jane_doe_resume.pdf'
     resumeUrl: '/resume.pdf' 
   };
 
@@ -73,12 +71,8 @@ const MyProfile = () => {
         <div className="profile-left-column">
           <div className="profile-card contact-info">
             <h4>Contact Information</h4>
-            {/* 
-              *** THIS IS THE CORRECTED LINE ***
-              The error was an extra '}' inside the href attribute.
-              It should be mailto:${...} inside the curly braces, not mailto:${...}}.
-            */}
-            <p><FaEnvelope /> <a href={mailto:${studentData.contact.email}}>{studentData.contact.email}</a></p>
+            {/* THIS IS THE CORRECTED LINE - Note the backticks (`) */}
+            <p><FaEnvelope /> <a href={`mailto:${studentData.contact.email}`}>{studentData.contact.email}</a></p>
             <p><FaPhone /> {studentData.contact.phone}</p>
             <p><FaMapMarkerAlt /> {studentData.contact.location}</p>
             <p><FaLinkedin /> <a href={studentData.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
