@@ -1,0 +1,146 @@
+/* General Card Styling */
+.opportunity-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 380px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.opportunity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #e0e0e0;
+  padding: 5px;
+}
+
+.header-info {
+  flex-grow: 1;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.company-name {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.detail-icon {
+  margin-right: 12px;
+  color: #007bff;
+}
+
+.stipend-value {
+  font-weight: 600;
+  color: #28a745;
+}
+
+/* Skills Section */
+.skills-container {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background-color: #e9ecef;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.skill-tag-more {
+  background-color: #007bff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Card Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.details-button,
+.apply-button {
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.details-button {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.details-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}

@@ -1,0 +1,43 @@
+/* src/components/CompaniesPage.css */
+
+.companies-page-container {
+  padding: 40px;
+  background-color: #f9fafb;
+  min-height: calc(100vh - 80px);
+}
+
+.companies-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.companies-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.companies-header p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .companies-page-container {
+    padding: 20px;
+  }
+  .companies-header h1 {
+    font-size: 2rem;
+  }
+}

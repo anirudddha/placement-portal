@@ -1,0 +1,30 @@
+/* src/index.css */
+
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*
+  Global CSS Resets and Base Styles
+*/
+body {
+  margin: 0; /* Remove default browser margin */
+  padding: 0; /* Remove default browser padding */
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* A neutral fallback background */
+}
+
+/*
+  A common and useful CSS reset. It makes layout work more predictably.
+  Learn more: https://css-tricks.com/box-sizing/
+*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

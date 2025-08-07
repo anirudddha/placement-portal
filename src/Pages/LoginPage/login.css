@@ -1,0 +1,193 @@
+/* src/components/LoginPage.css */
+
+/* Font import and body styles are now in index.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ... (the rest of the LoginPage.css from the previous answer remains the same) ... */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.login-form-header {
+    background-color: #f7f7f7;
+    padding: 25px 30px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.login-form-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-form-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0px 12px 12px 12px; /* Adjust left padding for icon */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.2);
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+    padding-left: 25px;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 18px;
+    padding: 0;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-actions label {
+    display: flex;
+    align-items: center;
+    color: #555;
+    cursor: pointer;
+}
+
+.form-actions input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.forgot-password-link {
+    color: #764ba2;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+}
+
+.login-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(118, 75, 162, 0.3);
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-link a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-form-wrapper {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .login-container {
+        padding: 0;
+    }
+    .login-form {
+        padding: 20px;
+    }
+    .login-form-header {
+        padding: 20px;
+    }
+    .login-form-header h2 {
+        font-size: 22px;
+    }
+}
